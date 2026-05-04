@@ -1,0 +1,13 @@
+{
+  "itemGroup.simulatedphysicsgun": "Example Mod Tab",
+  "block.simulatedphysicsgun.example_block": "Example Block",
+  "item.simulatedphysicsgun.example_item": "Example Item",
+
+  "simulatedphysicsgun.configuration.title": "simulated physics gun Configs",
+  "simulatedphysicsgun.configuration.section.simulatedphysicsgun.common.toml": "simulated physics gun Configs",
+  "simulatedphysicsgun.configuration.section.simulatedphysicsgun.common.toml.title": "simulated physics gun Configs",
+  "simulatedphysicsgun.configuration.items": "Item List",
+  "simulatedphysicsgun.configuration.logDirtBlock": "Log Dirt Block",
+  "simulatedphysicsgun.configuration.magicNumberIntroduction": "Magic Number Text",
+  "simulatedphysicsgun.configuration.magicNumber": "Magic Number"
+}
