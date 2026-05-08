@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.dogone.simulatedphysgun;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = simulatedphysicsgun.MODID, dist = Dist.CLIENT)
+@Mod(value = SimulatedPhysicsGun.MODID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = simulatedphysicsgun.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = SimulatedPhysicsGun.MODID, value = Dist.CLIENT)
 public class simulatedphysicsgunClient {
     public simulatedphysicsgunClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
@@ -25,7 +25,7 @@ public class simulatedphysicsgunClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        simulatedphysicsgun.LOGGER.info("HELLO FROM CLIENT SETUP");
-        simulatedphysicsgun.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        SimulatedPhysicsGun.LOGGER.info("HELLO FROM CLIENT SETUP");
+        SimulatedPhysicsGun.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }
